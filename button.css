@@ -1,0 +1,33 @@
+button {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* สีพื้นหลังปกติ */
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงาเบา */
+}
+
+button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+button:hover > svg {
+    font-size: 1.2em; /* ขยายขนาด SVG */
+    transform: translateX(-5px); /* ย้ายไปทางซ้าย */
+}
+
+button:hover {
+    box-shadow: 9px 9px 33px rgba(209, 209, 209, 0.6), -9px -9px 33px #ffffff; /* เปลี่ยนเงาเมื่อโฮเวอร์ */
+    transform: translateY(-2px); /* ยกปุ่มขึ้นเล็กน้อย */
+    background-color: #f0f0f0; /* เปลี่ยนสีพื้นหลังเมื่อโฮเวอร์ */
+    color: #333; /* เปลี่ยนสีตัวอักษรเมื่อโฮเวอร์ */
+}
